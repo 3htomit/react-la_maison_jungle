@@ -1,14 +1,19 @@
 import React from "react"
+import '../styles/Banner.css';
+import logo from '../assets/logo.png'
 
 function Banner() {
-  const title = "🌿 La Maison Jungle!"
+  const title = "La Maison Jungle!"
   const text = "Ici achetez toutes les plantes dont vous avez toujours rêvé"
   const emojis = " 🌵🌱🎍"
   return (
-    <React.Fragment>
-      <h1>{title.toUpperCase()}</h1>
-      <p>{text + emojis}</p>
-    </React.Fragment>
+      <div className="lmj-banner">
+        <div className="lmj-title">
+          <img src={logo} alt="La Maison Jungle logo" className="lmj-logo" />
+          <h1>{title.toUpperCase()}</h1>
+        </div>
+        <p>{text + emojis}</p>
+      </div>
   )
 }
 
