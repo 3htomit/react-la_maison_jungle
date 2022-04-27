@@ -1,20 +1,7 @@
-import React from "react"
-import '../styles/Banner.css';
-import logo from '../assets/logo.png'
+import '../styles/Banner.css'
 
-function Banner() {
-  const title = "La Maison Jungle!"
-  const text = "Ici achetez toutes les plantes dont vous avez toujours rêvé"
-  const emojis = " 🌵🌱🎍"
-  return (
-      <div className="lmj-banner">
-        <div className="lmj-title">
-          <img src={logo} alt="La Maison Jungle logo" className="lmj-logo" />
-          <h1>{title.toUpperCase()}</h1>
-        </div>
-        <p>{text + emojis}</p>
-      </div>
-  )
+function Banner({ children }) {
+	return <div className='lmj-banner'>{children}</div>
 }
 
 export default Banner
