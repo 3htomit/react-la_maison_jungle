@@ -1,0 +1,10 @@
+.lmj-plant-tags {
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	font-weight: 500;
+	color: white;
+	padding: 5px 10px;
+	background-color: #31b572;
+  border-radius: 5px 0 0 5px;
+}

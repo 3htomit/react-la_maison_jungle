@@ -1,5 +1,7 @@
+import '../styles/PlantTags.css'
+
 function PlantTags({best}) {
-  return (best && <div className='lmj-sales'>🔥</div>)
+  return (best && <div className='lmj-plant-tags'>🔥</div>)
   // if (plant.isBestSale && plant.isSpecialOffer) {
   //   return <div className='lmj-sales'>soldes + 🔥</div>
   // } else if (plant.isBestSale) {

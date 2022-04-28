@@ -12,3 +12,16 @@
 	flex-direction: column;
 	text-transform: capitalize;
 }
+
+.lmj-plant-imgtag {
+  position: relative;
+}
+
+.lmj-plant-details {
+  padding: 10px 20px;
+}
+.lmj-plant-details p {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
