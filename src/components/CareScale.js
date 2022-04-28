@@ -1,5 +1,5 @@
 function CareScale({scaleValue, careType}) {
-  const scaleType = careType === 'light' ? '☀️' : '💧';
+  const scaleType = careType === 'light' ? '🟡' : '💧';
   return <div>{scaleType.repeat(scaleValue)}</div>;
 }
 
