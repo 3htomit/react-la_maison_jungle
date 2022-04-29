@@ -12,13 +12,13 @@ function handleClick(plantName) {
 
 function PlantItem({name, cover, id, best, light, water}) {
   return (
-    <li key={id} class='lmj-plant-item' onClick={() => handleClick(name)}>
-      <div className='lmj-plant-imgtag'>
+    <li key={id} class='lmj-plant-item'>
+      <div className='lmj-plant-imgtag' onClick={() => handleClick(name)}>
         <PlantTags best={best} />
         <img src={cover} alt='Plant' className='lmj-plant-item-cover' />
       </div>
       <div className='lmj-plant-details'>
-        <p>{capitalize(name)}</p>
+        <p onClick={() => handleClick(name)}>{capitalize(name)}</p>
         <CareScale careType='light' scaleValue={light} />
         <CareScale careType='water' scaleValue={water} />
       </div>
