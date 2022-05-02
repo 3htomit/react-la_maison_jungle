@@ -29,6 +29,7 @@ function Footer() {
             ></input>
           <button>Enregistrer</button>
         </form>
+        {/* { !inputValue.includes('@') && (<div>⚠️ Warning, there is no @, this is not a valid email address.</div>) } */}
       </div>
 		</footer>
 	)
