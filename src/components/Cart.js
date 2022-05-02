@@ -16,7 +16,11 @@ function Cart() {
 			</button>
 			<h2>Panier</h2>
 			<div>Monstera : {monsteraPrice}€</div>
-			<button onClick={() => updateCart(cart + 1)}>Ajouter</button>
+      <div className='itemButtons'>
+        <button onClick={() => updateCart(cart + 1)}>➕</button>
+        <button onClick={() => updateCart(cart - 1)}>➖</button>
+        <button onClick={() => updateCart(0)}>❌</button>
+      </div>
 			<h3>Total : {monsteraPrice * cart}€</h3>
 		</div>
 	) : (
