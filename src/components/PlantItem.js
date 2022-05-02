@@ -1,29 +1,21 @@
-import PlantTags from './PlantTags';
-import CareScale from './CareScale';
+import CareScale from './CareScale'
 import '../styles/PlantItem.css'
 
-function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 function handleClick(plantName) {
-  alert(`Vous voulez acheter 1 ${plantName} ? Très bon choix 🌱✨`)
+	alert(`Vous voulez acheter 1 ${plantName}? Très bon choix 🌱✨`)
 }
 
-function PlantItem({name, cover, id, best, light, water}) {
-  return (
-    <li key={id} class='lmj-plant-item'>
-      <div className='lmj-plant-imgtag' onClick={() => handleClick(name)}>
-        <PlantTags best={best} />
-        <img src={cover} alt='Plant' className='lmj-plant-item-cover' />
-      </div>
-      <div className='lmj-plant-details'>
-        <p onClick={() => handleClick(name)}>{capitalize(name)}</p>
-        <CareScale careType='light' scaleValue={light} />
-        <CareScale careType='water' scaleValue={water} />
-      </div>
-    </li>
-  )
+function PlantItem({ cover, name, water, light }) {
+	return (
+		<li className='lmj-plant-item' onClick={() => handleClick}>
+			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
+			{name}
+			<div>
+				<CareScale careType='water' scaleValue={water} />
+				<CareScale careType='light' scaleValue={light} />
+			</div>
+		</li>
+	)
 }
 
 export default PlantItem
