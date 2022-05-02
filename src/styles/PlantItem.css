@@ -18,6 +18,13 @@
   position: relative;
 }
 
+.lmj-plant-item-title {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .lmj-plant-details {
   padding: 10px 20px;
 }
