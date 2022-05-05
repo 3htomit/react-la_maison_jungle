@@ -25,10 +25,9 @@ function ShoppingList({cart, updateCart}) {
               name={name}
               water={water}
               light={light}
-              // cart={cart}
-              // updateCart={updateCart}
+              cart={cart}
+              updateCart={updateCart}
               />
-              <button onClick={() => updateCart(cart + 1)}>➕</button>
           </div>
 				))}
 			</ul>

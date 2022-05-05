@@ -11,7 +11,7 @@ function PlantItem({ cover, name, water, light, cart, updateCart }) {
 			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
 			<div className='lmj-plant-item-title'>
         {name}
-        {/* <button onClick={() => updateCart(cart + 1)}>➕</button> */}
+        <button onClick={() => updateCart(cart + 1)}>➕</button>
       </div>
 			<div>
 				<CareScale careType='water' scaleValue={water} />

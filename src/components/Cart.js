@@ -3,7 +3,6 @@ import '../styles/Cart.css'
 
 function Cart({cart, updateCart}) {
 	const monsteraPrice = 8
-	// const [cart, updateCart] = useState(0)
 	const [isOpen, setIsOpen] = useState(true)
 
 	return isOpen ? (
@@ -19,8 +18,7 @@ function Cart({cart, updateCart}) {
         <button onClick={() => updateCart(0)} className='lmj-cart-reset'>❌</button>
       </div>
       <p>Quantité: {cart}</p>
-			{/* <div>Monstera : {monsteraPrice}€</div>
-      <div className='itemButtons'>
+      {/* <div className='itemButtons'>
         <button onClick={() => updateCart(cart + 1)}>➕</button>
         <button onClick={() => updateCart(cart - 1)}>➖</button>
       </div> */}
