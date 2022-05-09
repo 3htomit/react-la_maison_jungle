@@ -5,10 +5,11 @@ function handleClick(plantName) {
 	alert(`Vous voulez acheter 1 ${plantName}? Très bon choix 🌱✨`)
 }
 
-function PlantItem({ cover, name, water, light, cart, updateCart }) {
+function PlantItem({ cover, name, water, light, price, cart, updateCart }) {
 	return (
 		<li className='lmj-plant-item' onClick={() => handleClick}>
-			<img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
+			<span className='lmj-plant-item-price'>{price}€</span>
+      <img className='lmj-plant-item-cover' src={cover} alt={`${name} cover`} />
 			<div className='lmj-plant-item-title'>
         {name}
         <button onClick={() => updateCart(cart + 1)}>➕</button>
