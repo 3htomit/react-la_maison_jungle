@@ -5,17 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 200px;
-}
-
-.lmj-cart-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.lmj-cart-reset {
-  height: fit-content;
+	width: 300px;
 }
 
 .lmj-cart-add-button {
@@ -32,13 +22,18 @@
 	align-self: self-start;
 	padding: 0;
 	color: white;
+	align-self: flex-end;
 }
 
 .lmj-cart-closed {
 	padding: 32px;
-	width: 200px;
+	width: 300px;
 }
 
 .lmj-cart-closed > button {
 	color: black;
+}
+
+.lmj-cart ul {
+  padding-left: 0%;
 }
