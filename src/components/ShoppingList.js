@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { plantList } from '../data/plantList'
 import PlantItem from './PlantItem'
 import Categories from './Categories'
 import '../styles/ShoppingList.css'
 
-function ShoppingList({ cart, updateCart }) {
-	const [activeCategory, setActiveCategory] = useState('')
-
+function ShoppingList({ cart, updateCart, activeCategory, setActiveCategory }) {
 	function addToCart(name, price) {
 		const currentPlantSaved = cart.find((plant) => plant.name === name)
 		if (currentPlantSaved) {
